@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="719.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cash.register.mini.project.FXMLDocumentController">
+    <children>
+      <Text fill="RED" layoutX="158.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO TARGET" wrappingWidth="444.13671875">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+        <Button fx:id="candle" layoutX="78.0" layoutY="113.0" onAction="#onclickCandle" prefHeight="37.0" prefWidth="151.0" text="Candle" />
+      <Button fx:id="pencils" layoutX="78.0" layoutY="175.0" onAction="#onclickPencils" prefHeight="37.0" prefWidth="151.0" text="Pencils" />
+      <Button fx:id="iceCream" layoutX="78.0" layoutY="233.0" onAction="#onclickIceCream" prefHeight="37.0" prefWidth="151.0" text="Ice Cream" />
+      <Button fx:id="banana" layoutX="78.0" layoutY="294.0" onAction="#onclickBananas" prefHeight="37.0" prefWidth="151.0" text="Bananas" />
+      <Label fx:id="candleLbl" layoutX="239.0" layoutY="116.0" prefHeight="32.0" prefWidth="113.0" text="\$">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="pencilsLbl" layoutX="239.0" layoutY="178.0" prefHeight="32.0" prefWidth="113.0" text="\$">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="iCLbl" layoutX="239.0" layoutY="236.0" prefHeight="32.0" prefWidth="113.0" text="\$">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="bananaLbl" layoutX="239.0" layoutY="297.0" prefHeight="32.0" prefWidth="113.0" text="\$">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalLbl" layoutX="513.0" layoutY="265.0" prefHeight="35.0" prefWidth="94.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="taxLbl" layoutX="514.0" layoutY="224.0" prefHeight="35.0" prefWidth="106.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="subtotalLbl" layoutX="513.0" layoutY="192.0" prefHeight="35.0" prefWidth="121.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="551.0" layoutY="264.0" startX="-100.0" />
+      <Label fx:id="givenLbl" layoutX="217.0" layoutY="400.0" prefHeight="32.0" prefWidth="94.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="returnTotalLbl" layoutX="221.0" layoutY="458.0" prefHeight="37.0" prefWidth="160.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="pay" layoutX="157.0" layoutY="337.0" mnemonicParsing="false" onAction="#onclickPay" prefHeight="37.0" prefWidth="472.0" text="Pay" />
+      <Button fx:id="NewCustomer" layoutX="82.0" layoutY="670.0" mnemonicParsing="false" onAction="#onclickNewCust" prefHeight="37.0" prefWidth="596.0" text="New Customer" />
+      <Label fx:id="pennyLbl" layoutX="181.0" layoutY="516.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="nickelLbl" layoutX="181.0" layoutY="551.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="dimeLbl" layoutX="181.0" layoutY="584.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="quarterLbl" layoutX="181.0" layoutY="621.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="dollarLbl" layoutX="368.0" layoutY="514.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="fiveDolLbl" layoutX="367.0" layoutY="568.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="tenDolLbl" layoutX="372.0" layoutY="622.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="twentyDolLbl" layoutX="556.0" layoutY="514.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="fiftyDolLbl" layoutX="556.0" layoutY="568.0" prefHeight="36.0" prefWidth="86.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="431.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total: $" wrappingWidth="78.5367431640625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="448.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax: $" wrappingWidth="62.53674650192261">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="395.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtotal: $" wrappingWidth="113.60000118613243">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="Calculate" layoutX="473.0" layoutY="127.0" onAction="#onclickCal" prefHeight="24.0" prefWidth="151.0" text="Calculate" />
+      <Text layoutX="68.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Given Money:" wrappingWidth="151.00000947713852">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Money:" wrappingWidth="160.00000947713852">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="hundDolLbl" layoutX="557.0" layoutY="622.0" prefHeight="36.0" prefWidth="85.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="496.0" layoutY="649.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$100:" wrappingWidth="62.536742985248566">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="508.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$50:" wrappingWidth="47.336730778217316">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="507.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$20:" wrappingWidth="47.336730778217316">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="322.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$10:" wrappingWidth="47.336730778217316">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="333.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$5:" wrappingWidth="32.936706364154816">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="333.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$1:" wrappingWidth="32.936706364154816">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="117.0" layoutY="649.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.25:" wrappingWidth="62.53674864768982">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="117.0" layoutY="614.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.10:" wrappingWidth="62.53674864768982">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="117.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.05:" wrappingWidth="62.53674864768982">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="118.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.01:" wrappingWidth="62.53674864768982">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="start" layoutX="341.0" layoutY="79.0" mnemonicParsing="false" onAction="#initialize" prefHeight="26.0" prefWidth="79.0" text="Start" />
+      <Label fx:id="moneyLbl" layoutX="303.0" layoutY="390.0" prefHeight="18.0" prefWidth="179.0" />
+      <Text layoutX="191.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Press Start to Begin" textAlignment="CENTER" wrappingWidth="151.00000381469727">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="6.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Choose a product to buy and enter how many of each you want to buy" textAlignment="CENTER" wrappingWidth="69.73671901226044">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="544.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Press calculate to figure out the subtotal" textAlignment="CENTER" wrappingWidth="151.00000381469727">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="366.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Press pay when you are ready to pay" textAlignment="CENTER" wrappingWidth="151.00000381469727">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="6.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Press new customer when you need to start over" textAlignment="CENTER" wrappingWidth="94.39999639987946">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
